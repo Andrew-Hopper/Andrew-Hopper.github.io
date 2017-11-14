@@ -1,0 +1,264 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[ MASTER STYLESHEET ]
+AUTHOR : NCode.Art
+PROJECT : NC-Hold Coming-Soon Page
+VERSION : 1.4
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	IMPORT FONTS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	GENERAL
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body{ background-color: #fff; }
+main{ box-shadow: 0 0 30px rgba(255,255,255,0.2); }
+.background .overlay{ background-color: rgba(50,154,189,0.7) !important; }
+
+/*	FONTS
+------------------------------*/
+.link-box .text,
+.tagline h1,
+.tagline p,
+.subscribe .form-control,
+.dash .digit,
+.dash_title,
+.contact-box .text p,
+.contact-box .text a,
+.btn.btn-color,
+#notifyMe .message,
+.title-wrapper p,
+.measure-box .per .no,
+.project-detail .h-text{
+	font-family: 'Open Sans', sans-serif;	
+}
+.info-box .text p,
+.team-box .text .small-text,
+.project-detail p{
+	font-family: 'Open Sans', sans-serif;	
+}
+
+/*	TYPOGRAPHY
+------------------------------*/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: 'Open Sans', sans-serif;	
+	margin: 0;
+}
+
+/*	BUTTON
+------------------------------*/
+.btn{ font-weight: 800; }
+.btn.btn-color{
+	border: 1px dashed;
+	border-color: transparent;
+	color: #2D8BAD;
+}
+.btn.btn-color:hover{
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+}
+
+/*	TITLE
+------------------------------*/
+.title-wrapper .title{ letter-spacing: 2px; font-weight: 800; }
+.title-wrapper .line{
+	height: 1px;
+	background-color: transparent;
+	border-top: 1px dashed;
+	border-color: rgba(255,255,255,0.4);
+}
+.title-wrapper.sub .title{ font-weight: 700; letter-spacing: 1px; }
+
+/*	CAROUSEL COMMON STYLE
+---------------------------------*/
+
+/* CAROUSEL BUTTON */
+.carousel-btn .btn{ color: #fff; }
+.carousel-btn .prev{ border-right: 1px dashed; }
+.carousel-btn .next{ border-left: 1px dashed; }
+
+/*	NAVIGATION
+------------------------------*/
+.nc-menu-container{ background-color: #fff; }
+.nc-menu-container.visible-on{ background-color: #fff; }
+.nc-menu-container .nav-header{ border-bottom: 1px dashed; border-color: #2D8BAD; }
+.nc-menu-close::after, 
+.nc-menu-close::before{
+	background-color: #2D8BAD;
+}
+.nc-menu li{ height: calc((969px - 80px)/7); min-height: 125px; }
+
+/* LINK-BOX */
+.nc-menu li .link-box{ 
+	border-bottom: 1px dashed; 
+	border-color: #2D8BAD;
+	color: #2D8BAD;
+}
+.nc-menu li .link-box:hover{ background-color: #2D8BAD; color: #fff; }
+.link-box .icon{ 
+	width: 32px; 
+	height: 32px; 
+	margin-bottom: 8px;
+}
+.link-box .icon i{ font-size: 26px; }
+.link-box .text{ letter-spacing: 2px; font-weight: 800; }
+.nc-menu li.nc-active .link-box {
+	background-color: #2D8BAD;
+    color: #fff;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	HOME PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*	TAGLINE
+------------------------------*/
+.tagline h1{ font-weight: 800; }
+.tagline p{
+	padding-top: 10px;
+	border-top: 1px dashed;
+	border-color: rgba(255,255,255,0.5);
+}
+
+/*	SUBSCRIBE
+------------------------------*/
+.subscribe .form-control{ border-bottom: 1px dashed; border-color: rgba(255,255,255,0.5); }
+.subscribe .icon{ color: rgba(255,255,255,0.5); }
+
+/*	SOCIAL-ICON
+------------------------------*/
+.social-icon .icon:hover{ color: #2D8BAD; }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	ABOUT PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.text-info p{ color: rgba(255,255,255,0.65); }
+
+/*	MEASURE-BOX
+------------------------------*/
+.measure-box{ border-bottom-style: dashed; border-color: rgba(255,255,255,0.5); }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	ABOUT PAGE STYLE-1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.large-text{ font-weight: 300; }
+.info-box-1-wrp{ border-left-style: dashed; border-color: rgba(255,255,255,0.5); }
+.info-box-1 .icon .box{ border-bottom-style: dashed; border-color: rgba(255,255,255,0.5); }
+.info-box-1 .text p{ color: rgba(255,255,255,0.65); }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	SERVICES PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*	INFO-BOX
+------------------------------*/
+.info-box .icon .box{ border-bottom: 1px dashed; border-color: rgba(255,255,255,0.5); }
+.info-box .text .h-text{ font-weight: 600; }
+.info-box .text p{ color: rgba(255,255,255,0.65); }
+.info-box:hover .icon{ color: #2D8BAD; }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	TIME PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* COUNTDOWN-CLOCK
+--------------------------------*/
+.dash{ border-bottom: 1px dashed rgba(255,255,255,0.5); }
+.dash_title{ color: rgba(255,255,255,0.65); letter-spacing: 1px; }
+.dash .digit{ font-weight: 700; }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	CONTACT PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*  CONTACT FORM
+---------------------------------*/
+.contact-form .form-control{ border-bottom: 1px dashed; border-color: rgba(255,255,255,0.5); }
+
+/*  CONTACT-BOX
+---------------------------------*/
+.contact-box{ border-bottom: 1px dashed; border-color: rgba(255,255,255,0.5); }
+.contact-box:hover .icon{ color: #2D8BAD; }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	OUR-TEAM PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*  TEAM-BOX
+---------------------------------*/
+.team-box .text .h-text{
+	color: #2D8BAD;
+	border-bottom: 1px dashed;
+	border-color: #2D8BAD;
+}
+.team-box .small-text{ color: #2D8BAD; }
+.team-box-1 .text p{ color: rgba(255,255,255,0.65); }
+.team-box .social-link .icon{ color: #2D8BAD; }
+.team-box .social-link .icon:hover{
+	background-color: #2D8BAD;
+	color: #fff;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	 OUR-TEAM PAGE STYLE-1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*  TEAM-BOX-1
+---------------------------------*/
+.team-box-1{ background-color: rgba(255,255,255,0.1); }
+.team-box-1 .text .name{ border-bottom-style: dashed; border-color: rgba(255,255,255,0.5); }
+.team-box-1 .social-link .icon:hover{
+	background-color: #fff;
+	color: #2D8BAD;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	PORTFOLIO PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.portfolio-carousel .carousel-btn .btn{
+	background-color: rgba(45,139,173,0.2);
+	color: #fff;		
+	border-color: rgba(255,255,255,0.5)
+}
+.portfolio-detail .h-text, 
+.portfolio-detail p{ background-color: rgba(45,139,173,0.5); }
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	PORTFOLIO-1 PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.port-detail .tools .tool{
+	color: #2D8BAD;
+	border-right: 1px dashed;
+	border-color: #2D8BAD;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	PACKAGE PAGE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.package-box,
+.package-box .top-wrp{ background-color: rgba(255,255,255,0.1); }
+.package-box .detail li{
+	border-bottom: 1px dashed;
+	border-color: rgba(255,255,255,0.7);
+}
+.package-box:hover{ border-color: #fff; }
