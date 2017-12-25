@@ -887,7 +887,7 @@ h1, h2, h3, h4, h5, h6,
 
 /*	SOCIAL-ICON
 ------------------------------*/
-.social-icon{ text-align: center; margin-top: 60px; }
+.social-icon{ text-align: center;} /* margin-top: 60px; }*/
 .social-icon .icon{
 	display: inline-block;
 	width: 40px;
