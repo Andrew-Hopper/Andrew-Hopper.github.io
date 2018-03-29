@@ -141,7 +141,7 @@ Screen - Game
    background-repeat: repeat-x;
    background-position: 0px 100%;
    background-color: #4ec0ca;
-   
+
    -webkit-animation: animSky 7s linear infinite;
    animation: animSky 7s linear infinite;
 }
@@ -162,7 +162,7 @@ Screen - Game
    width: 100%;
    background-image: url('../assets/ceiling.png');
    background-repeat: repeat-x;
-   
+
    -webkit-animation: animCeiling 481ms linear infinite;
    animation: animCeiling 481ms linear infinite;
 }
@@ -177,7 +177,7 @@ Screen - Game
    background-repeat: repeat-x;
    background-position: 0px 0px;
    background-color: #ded895;
-   
+
    -webkit-animation: animLand 2516ms linear infinite;
    animation: animLand 2516ms linear infinite;
 }
@@ -219,7 +219,7 @@ Screen - Game
    height: 280px;
    background-image: url('../assets/scoreboard.png');
    background-repeat: no-repeat;
-   
+
    z-index: 1000;
 }
 
@@ -297,7 +297,7 @@ Screen - Game
    width: 34px;
    height: 24px;
    background-image: url('../assets/bird.png');
-   
+
    -webkit-animation: animBird 300ms steps(4) infinite;
    animation: animBird 300ms steps(4) infinite;
 }
@@ -309,7 +309,7 @@ Screen - Game
    width: 52px;
    height: 100%;
    z-index: 10;
-   
+
    -webkit-animation: animPipe 7500ms linear;
    animation: animPipe 7500ms linear;
 }
