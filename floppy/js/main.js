@@ -26,11 +26,11 @@ var replayclickable = false;
 
 //sounds
 var volume = 30;
-var soundJump = new buzz.sound("assets/sounds/sfx_wing.ogg");
-var soundScore = new buzz.sound("assets/sounds/sfx_point.ogg");
-var soundHit = new buzz.sound("assets/sounds/sfx_hit.ogg");
-var soundDie = new buzz.sound("assets/sounds/sfx_die.ogg");
-var soundSwoosh = new buzz.sound("assets/sounds/sfx_swooshing.ogg");
+var soundJump = new buzz.sound("floppy/assets/sounds/sfx_wing.ogg");
+var soundScore = new buzz.sound("floppy/assets/sounds/sfx_point.ogg");
+var soundHit = new buzz.sound("floppy/assets/sounds/sfx_hit.ogg");
+var soundDie = new buzz.sound("floppy/assets/sounds/sfx_die.ogg");
+var soundSwoosh = new buzz.sound("floppy/assets/sounds/sfx_swooshing.ogg");
 buzz.all().setVolume(volume);
 
 //loops
@@ -321,9 +321,9 @@ function setMedal()
       medal = "gold";
    if(score >= 40)
       medal = "platinum";
-   
-   elemmedal.append('<img src="assets/medal_' + medal +'.png" alt="' + medal +'">');
-   
+
+   elemmedal.append('<img src="floppy/assets/medal_' + medal +'.png" alt="' + medal +'">');
+
    //signal that a medal has been won
    return true;
 }
