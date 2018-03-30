@@ -366,12 +366,20 @@ function playerDead()
    }
 }
 
+<!-- Yandex.Metrika counter --> <script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+
+try { var yaCounter48282233 = new Ya.Metrika({ id:48282233, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { }
+
 function sendScore(score)
 {
     // Отсекаем совсем старые браузеры.
-    if (!window.JSON || score < 2) { return; }
+    if (!window.JSON) { return; }
 
-    var yaCounter48282233 = new Ya.Metrika({id: 48282233, params:  {score: score}});
+    new Image().src = 'https://mc.yandex.ru/watch/' + 48282233 +
+        '/?site-info=' + encodeURIComponent(JSON.stringify({
+          'Scores':score
+        }))
+        '&rn=' + Math.random();
 }
 
 function showScore()
