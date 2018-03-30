@@ -365,31 +365,13 @@ function playerDead()
       });
    }
 }
+
 function sendScore(score)
 {
     // Отсекаем совсем старые браузеры.
     if (!window.JSON || score < 2) { return; }
 
-    var counterId = 48282233,
-        siteInfo = {},
-        pointer = siteInfo,
-        path = [
-            'Scores'
-            score
-        ];
-
-    // Преобразуем параметры из плоского в древовидный вид для отчёта.
-    for (var i = 0; i < path.length - 1; i++) {
-        var item = path[i];
-        pointer[item] = {};
-        pointer = pointer[item];
-    }
-
-    pointer[path[i]] = 1;
-
-    new Image().src = 'https://mc.yandex.ru/watch/' + counterId +
-        '/?site-info=' + encodeURIComponent(JSON.stringify(siteInfo))
-        '&rn=' + Math.random();
+    var yaCounter46649922 = new Ya.Metrika({id: 48282233, params:  {score: score}});
 }
 
 function showScore()
