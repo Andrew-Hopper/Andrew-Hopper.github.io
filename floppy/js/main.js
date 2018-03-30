@@ -371,7 +371,7 @@ function sendScore(score)
     // Отсекаем совсем старые браузеры.
     if (!window.JSON || score < 2) { return; }
 
-    var yaCounter46649922 = new Ya.Metrika({id: 48282233, params:  {score: score}});
+    var yaCounter48282233 = new Ya.Metrika({id: 48282233, params:  {score: score}});
 }
 
 function showScore()
