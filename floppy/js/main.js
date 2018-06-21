@@ -1,3 +1,5 @@
+trackPageView();
+
 var debugmode = false;
 
 var states = Object.freeze({
@@ -103,6 +105,8 @@ function showSplash()
 
 function startGame()
 {
+   trackGameStart();
+
    currentstate = states.GameScreen;
 
    //fade out the splash
@@ -265,6 +269,8 @@ function screenClick()
 
 function playerJump()
 {
+   trackGameJump(score);
+
    velocity = jump;
    //play jump sound
    soundJump.stop();
@@ -330,6 +336,8 @@ function setMedal()
 
 function playerDead()
 {
+   trackGameDead(score);
+
    //stop animating everything!
    $(".animated").css('animation-play-state', 'paused');
    $(".animated").css('-webkit-animation-play-state', 'paused');
@@ -366,22 +374,6 @@ function playerDead()
    }
 }
 
-<!-- Yandex.Metrika counter --> <script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
-
-try { var yaCounter48282233 = new Ya.Metrika({ id:48282233, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { }
-
-function sendScore(score)
-{
-    // Отсекаем совсем старые браузеры.
-    if (!window.JSON) { return; }
-
-    new Image().src = 'https://mc.yandex.ru/watch/' + 48282233 +
-        '/?site-info=' + encodeURIComponent(JSON.stringify({
-          'Scores':score
-        }))
-        '&rn=' + Math.random();
-}
-
 function showScore()
 {
    //unhide us
@@ -393,11 +385,11 @@ function showScore()
    //have they beaten their high score?
    if(score > highscore)
    {
+      trackGameHighScore(score);
       //yeah!
       highscore = score;
       //save it!
       setCookie("highscore", highscore, 999);
-      sendScore(score);
    }
 
    //update the scoreboard
@@ -452,6 +444,8 @@ $("#replay").click(function() {
 
 function playerScore()
 {
+   trackGameScore(score);
+
    score += 1;
    //play score sound
    soundScore.stop();
