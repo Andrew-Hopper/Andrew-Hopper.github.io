@@ -31,6 +31,7 @@ var volume = 30;
 var soundJump = new buzz.sound("floppy/assets/sounds/sfx_wing.ogg");
 var soundScore = new buzz.sound("floppy/assets/sounds/sfx_point.ogg");
 var soundHit = new buzz.sound("floppy/assets/sounds/sfx_hit.ogg");
+var soundHitBled = new buzz.sound("floppy/assets/sounds/sfx_hit_bled.ogg");
 var soundDie = new buzz.sound("floppy/assets/sounds/sfx_die.ogg");
 var soundSwoosh = new buzz.sound("floppy/assets/sounds/sfx_swooshing.ogg");
 buzz.all().setVolume(volume);
@@ -366,7 +367,7 @@ function playerDead()
    else
    {
       //play the hit sound (then the dead sound) and then show score
-      soundHit.play().bindOnce("ended", function() {
+     (score ? soundHitBled : soundHit).play().bindOnce("ended", function() {
          soundDie.play().bindOnce("ended", function() {
             showScore();
          });
