@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Floppy Roody</title>
+
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+      <!-- Open Graph tags -->
+      <meta property="og:title" content="Floppy Roody" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Floppy Roody" />
+
+      <!-- Style sheets -->
+      <link href="floppy/css/reset.css" rel="stylesheet">
+      <link href="floppy/css/main.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="gamecontainer">
+         <div id="gamescreen">
+            <div id="sky" class="animated">
+               <div id="flyarea">
+                  <div id="ceiling" class="animated"></div>
+                  <!-- This is the flying and pipe area container -->
+                  <div id="player" class="bird animated"></div>
+
+                  <div id="bigscore"></div>
+
+                  <div id="splash"></div>
+
+                  <div id="scoreboard">
+                     <div id="medal"></div>
+                     <div id="currentscore"></div>
+                     <div id="highscore"></div>
+                     <div id="replay"><img src="floppy/assets/replay.png" alt="replay"></div>
+                  </div>
+
+                  <!-- Pipes go here! -->
+               </div>
+            </div>
+            <div id="land" class="animated"><div id="debug"></div></div>
+         </div>
+      </div>
+      <div id="footer">
+         <!-- <a href="http://www.dotgears.com/">original game/concept/art by dong nguyen</a> -->
+      </div>
+      <div class="boundingbox" id="playerbox"></div>
+      <div class="boundingbox" id="pipebox"></div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+      <script src="floppy/js/analytics.js"></script>
+      <script src="floppy/js/main.js"></script>
+   </body>
+</html>

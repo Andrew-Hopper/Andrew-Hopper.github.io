@@ -19,7 +19,7 @@ VERSION : 1.4
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 body{ background-color: #fff; }
 main{ box-shadow: 0 0 30px rgba(255,255,255,0.2); }
-.background .overlay{ background-color: rgba(50,154,189,0.7) !important; }
+.background .overlay{ background-color: rgba(0, 0, 32, 0.5) !important; }
 
 /*	FONTS
 ------------------------------*/
@@ -36,19 +36,19 @@ main{ box-shadow: 0 0 30px rgba(255,255,255,0.2); }
 .title-wrapper p,
 .measure-box .per .no,
 .project-detail .h-text{
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 }
 .info-box .text p,
 .team-box .text .small-text,
 .project-detail p{
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*	TYPOGRAPHY
 ------------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 }
 
@@ -90,22 +90,22 @@ h1, h2, h3, h4, h5, h6,
 .nc-menu-container{ background-color: #fff; }
 .nc-menu-container.visible-on{ background-color: #fff; }
 .nc-menu-container .nav-header{ border-bottom: 1px dashed; border-color: #2D8BAD; }
-.nc-menu-close::after, 
+.nc-menu-close::after,
 .nc-menu-close::before{
 	background-color: #2D8BAD;
 }
 .nc-menu li{ height: calc((969px - 80px)/7); min-height: 125px; }
 
 /* LINK-BOX */
-.nc-menu li .link-box{ 
-	border-bottom: 1px dashed; 
+.nc-menu li .link-box{
+	border-bottom: 1px dashed;
 	border-color: #2D8BAD;
 	color: #2D8BAD;
 }
 .nc-menu li .link-box:hover{ background-color: #2D8BAD; color: #fff; }
-.link-box .icon{ 
-	width: 32px; 
-	height: 32px; 
+.link-box .icon{
+	width: 32px;
+	height: 32px;
 	margin-bottom: 8px;
 }
 .link-box .icon i{ font-size: 26px; }
@@ -234,10 +234,10 @@ h1, h2, h3, h4, h5, h6,
 
 .portfolio-carousel .carousel-btn .btn{
 	background-color: rgba(45,139,173,0.2);
-	color: #fff;		
+	color: #fff;
 	border-color: rgba(255,255,255,0.5)
 }
-.portfolio-detail .h-text, 
+.portfolio-detail .h-text,
 .portfolio-detail p{ background-color: rgba(45,139,173,0.5); }
 
 
