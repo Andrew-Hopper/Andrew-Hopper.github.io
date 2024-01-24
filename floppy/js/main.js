@@ -1,5 +1,3 @@
-trackPageView();
-
 var debugmode = false;
 
 var states = Object.freeze({
@@ -106,8 +104,6 @@ function showSplash()
 
 function startGame()
 {
-   trackGameStart();
-
    currentstate = states.GameScreen;
 
    //fade out the splash
@@ -270,8 +266,6 @@ function screenClick()
 
 function playerJump()
 {
-   trackGameJump(score);
-
    velocity = jump;
    //play jump sound
    soundJump.stop();
@@ -337,8 +331,6 @@ function setMedal()
 
 function playerDead()
 {
-   trackGameDead(score);
-
    //stop animating everything!
    $(".animated").css('animation-play-state', 'paused');
    $(".animated").css('-webkit-animation-play-state', 'paused');
@@ -386,7 +378,6 @@ function showScore()
    //have they beaten their high score?
    if(score > highscore)
    {
-      trackGameHighScore(score);
       //yeah!
       highscore = score;
       //save it!
@@ -445,8 +436,6 @@ $("#replay").click(function() {
 
 function playerScore()
 {
-   trackGameScore(score);
-
    score += 1;
    //play score sound
    soundScore.stop();
